@@ -81,13 +81,13 @@ export default function Task({ task }) {
   }
   return (
     <li className="list-group-item d-flex flex-column flex-md-row task ">
-      <div>
+      <div className="my-2">
         <span className="title-box">{task.title}</span>
         <span className={statusClasses}>
           {task.completed ? "completed" : "in-Progress"}
         </span>
       </div>
-      <div className="actions">
+      <div className="my-2">
         {idEdit == task.id ? (
           <input
             type="text"
